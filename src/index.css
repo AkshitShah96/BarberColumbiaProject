@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Figma tokens */
+  --color-primary-green-dark: #1a2722;
+  --color-primary-green-light: #9ac138;
+  --color-primary-white: #ffffff;
+  --color-primary-gray: #dfe1d5;
+  --color-secondary-yellow: #fdb400;
+  --color-secondary-maroon: #99060d;
+  --color-secondary-gray-dark: #5d665e;
+
+  --shadow-card: 2px 4px 10.1px rgba(0, 0, 0, 0.7);
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-primary-white);
+  color: var(--color-primary-green-dark);
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

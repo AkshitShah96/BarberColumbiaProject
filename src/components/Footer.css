@@ -1,0 +1,108 @@
+.vegas-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(26, 39, 34, 0.95);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vegas-footer__inner {
+  padding: 34px 87px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 39px;
+  color: var(--color-primary-white);
+}
+
+.vegas-footer__top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 404px;
+}
+
+.vegas-footer__brandMark {
+  width: 124px;
+  height: 165px;
+  display: grid;
+  place-items: center;
+  font-family: Anton, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.vegas-footer__links {
+  width: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.vegas-footer__link {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+  color: var(--color-primary-white);
+}
+
+.vegas-footer__info {
+  width: 146px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.vegas-footer__infoTitle {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.vegas-footer__infoText {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.vegas-footer__whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.vegas-footer__divider {
+  width: 1167px;
+  max-width: 100%;
+  height: 1px;
+  background: var(--color-primary-white);
+  opacity: 0.9;
+}
+
+.vegas-footer__bottom {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  white-space: pre-line;
+}
+
+@media (max-width: 1100px) {
+  .vegas-footer__inner {
+    padding: 34px 16px;
+  }
+
+  .vegas-footer__top {
+    gap: 36px;
+    flex-wrap: wrap;
+  }
+}
+

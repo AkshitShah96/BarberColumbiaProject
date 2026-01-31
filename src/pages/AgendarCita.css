@@ -1,0 +1,178 @@
+.agendar {
+  position: relative;
+  width: 1440px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.agendar__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.agendar__steps {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 66px 0;
+  background: var(--color-primary-white);
+  z-index: 1;
+}
+
+.agendar-step {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.agendar-step__dot {
+  width: 49px;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--color-primary-gray);
+  color: var(--color-primary-white);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.agendar-step__dot--active {
+  background: linear-gradient(180deg, rgba(123, 154, 45, 1) 0%, rgba(26, 39, 34, 1) 100%);
+  border: 1px solid var(--color-primary-green-light);
+}
+
+.agendar-step__label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.agendar-step__line {
+  width: 132.5px;
+  height: 1px;
+  background: var(--color-primary-gray);
+}
+
+.agendar__panel {
+  position: relative;
+  width: 100%;
+  background: var(--color-primary-green-dark);
+  color: var(--color-primary-white);
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+  z-index: 1;
+}
+
+.agendar__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+
+.agendar__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 344px);
+  justify-content: center;
+  gap: 34px;
+  padding: 0 16px;
+}
+
+.agendar-card {
+  width: 344px;
+  min-height: 231px;
+  border-radius: 10px;
+  border: 1px solid rgba(123, 154, 45, 1);
+  box-shadow: var(--shadow-card);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.agendar-card__top {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.agendar-card__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.2);
+  display: grid;
+  place-items: center;
+  color: var(--color-primary-green-light);
+}
+
+.agendar-card__name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.agendar-card__desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  white-space: pre-line;
+}
+
+.agendar-card__dur {
+  width: 154px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 6px;
+  background: var(--color-primary-gray);
+  color: var(--color-secondary-gray-dark);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.agendar__continue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--color-secondary-yellow);
+  color: var(--color-primary-green-dark);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@media (max-width: 1100px) {
+  .agendar__cards {
+    grid-template-columns: repeat(1, 344px);
+  }
+}
+

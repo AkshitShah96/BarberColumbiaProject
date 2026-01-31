@@ -1,0 +1,182 @@
+.appointments {
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.appointment-form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.form-section {
+  margin-bottom: 3rem;
+}
+
+.form-section-title {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.service-option {
+  background-color: var(--dark-green);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid rgba(74, 222, 128, 0.2);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.service-option:hover {
+  border-color: var(--light-green);
+  transform: translateY(-2px);
+}
+
+.service-option.selected {
+  border-color: var(--light-green);
+  background-color: rgba(74, 222, 128, 0.1);
+}
+
+.service-option h3 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.service-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-price {
+  color: var(--accent-yellow);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.service-duration {
+  color: var(--light-gray);
+  font-size: 0.9rem;
+}
+
+.barbers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.barber-card {
+  background-color: var(--dark-green);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid rgba(74, 222, 128, 0.2);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.barber-card:hover {
+  border-color: var(--light-green);
+  transform: translateY(-2px);
+}
+
+.barber-card.selected {
+  border-color: var(--light-green);
+  background-color: rgba(74, 222, 128, 0.1);
+}
+
+.barber-avatar {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.barber-card h3 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.barber-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  color: var(--accent-yellow);
+  font-size: 0.9rem;
+}
+
+.datetime-selectors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.date-selector,
+.time-selector {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-selector label,
+.time-selector label {
+  color: var(--light-gray);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.date-selector input,
+.time-selector select {
+  background-color: var(--dark-green);
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: var(--white);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.date-selector input:focus,
+.time-selector select:focus {
+  outline: none;
+  border-color: var(--light-green);
+}
+
+.time-selector select {
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: var(--light-green);
+  color: var(--darker-green);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 2rem;
+}
+
+.submit-button:hover {
+  background-color: #3bc96d;
+}
+
+@media (max-width: 768px) {
+  .datetime-selectors {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid,
+  .barbers-grid {
+    grid-template-columns: 1fr;
+  }
+}
